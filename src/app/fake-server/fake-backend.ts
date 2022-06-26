@@ -143,6 +143,7 @@ export interface User {
   lastName: string;
   role: UserType;
   permissions: Array<string>;
+  token?: string;
 }
 
 export type UserType = 'Admin' | 'Editor' | 'Subscriber';

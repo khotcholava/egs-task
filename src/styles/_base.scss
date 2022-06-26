@@ -1,0 +1,42 @@
+.mt-8 {
+  margin-top: 8px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.m-16 {
+  margin: 16px;
+}
+
+.text-danger {
+  color: red
+}
+
+.text-success {
+  color: green;
+}
+
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

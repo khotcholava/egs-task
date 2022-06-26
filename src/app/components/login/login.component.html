@@ -1,6 +1,11 @@
 <mat-card>
   <mat-card-title>Login</mat-card-title>
   <mat-card-content>
+    <div class="credentials">
+      <strong>Admin User</strong> - U: admin P: admin<br/>
+      <strong>Editor</strong> - U: editor P: editor <br/>
+      <strong>Subscriber</strong> - U: subscriber P: subscriber <br/>
+    </div>
     <form [formGroup]="form" (ngSubmit)="submit()">
       <p>
         <mat-form-field>
@@ -15,7 +20,7 @@
       </p>
 
       <p *ngIf="error" class="error">
-        {{ error | json }}
+       {{error}}
       </p>
 
       <div class="button">

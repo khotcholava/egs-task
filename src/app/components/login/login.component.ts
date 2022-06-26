@@ -51,14 +51,9 @@ export class LoginComponent implements OnInit {
         this.router.navigateByUrl(returnUrl)
       },
       error: error => {
-        this.error = error
+        this.error = error.error.message
         this.loading = false
       }
     })
   }
-}
-
-interface LoginForm {
-  password: string;
-  username: string
 }

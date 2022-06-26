@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {BehaviorSubject, map, Observable} from 'rxjs';
-import {User} from '../fake-server/fake-backend';
+import {User, UserType} from '../fake-server/fake-backend';
 import {HttpClient} from '@angular/common/http';
 import {Router} from '@angular/router';
 import {environment} from '../../environments/environment';
@@ -33,6 +33,10 @@ export class AuthService {
           return user;
         }),
       );
+  }
+
+  public get userRole(): UserType {
+    return this.userValue.role;
   }
 
   logout() {
